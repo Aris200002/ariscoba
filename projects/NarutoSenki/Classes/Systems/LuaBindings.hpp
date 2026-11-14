@@ -195,7 +195,7 @@ namespace NarutoBindings
 		/** Cek resource karakter (sama dengan urutan pencarian Hero::setID). */
 		inline bool heroResourceExists(const std::string &name)
 		{
-			auto fu = cocos2d::FileUtils::sharedFileUtils();
+			auto fu = cocos2d::CCFileUtils::sharedFileUtils();
 			static const char *kDirs[] = {"Ninja", "Kuchiyose", "Kugutsu", "Guardian"};
 			for (auto dir : kDirs)
 			{
